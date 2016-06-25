@@ -1,0 +1,20 @@
+<div ng-controller="converterController">
+	<div class="header-wrapper">
+		<h2>Convert some markdown to HTML</h2>
+	</div>
+	<div class="row">
+		<div class="six columns">
+			<form ng-submit="submitForm()">
+				<label for="markdownField">Your markdown</label>
+				<textarea class="u-full-width" id="markdownField" placeholder="Type your markdown to convert here" ng-model="formData"></textarea>
+				<button class="button-primary" type="submit">Submit</button>
+			</form>
+		</div>
+
+		<div class="six columns">
+			<label for="htmlResult">Your HTML</label>
+			<span id="htmlResult" ng-bind-html="myHTML"></span>
+		</div>
+	</div>
+	<!-- <article title="A Custom Directive" content="This is some content for the directive."></article> -->
+</div>

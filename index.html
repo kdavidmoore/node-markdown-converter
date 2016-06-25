@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+
+	<meta charset="utf-8">
+	<title>Markdown-to-HTML Converter</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/skeleton.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+  	
+	<div class="container">
+		<div ui-view></div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="assets/libs/angular-ui-router.min.js"></script>
+	<script src="assets/libs/angular-sanitize.min.js"></script>
+	<script src="app/app.module.js"></script>
+	<script src="app/config/app.config.js"></script>
+	<script src="app/constants/api-constant.js"></script>
+	<script src="app/factories/converter.js"></script>
+	<script src="app/shared/article/articleDirective.js"></script>
+	<script src="app/components/converter/converterController.js"></script>
+</body>
+</html>

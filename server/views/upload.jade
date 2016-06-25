@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	div(class="container")
+		form(action="./addfile" method="post" enctype="multipart/form-data")
+			div(class="row")
+				div(class="six columns")
+					label(for="uploadBtn") Upload a markdown file
+					input(type="file" id="uploadBtn" name="uploadedFile" required)
+					input(type="submit" class="button-primary" value="Submit")

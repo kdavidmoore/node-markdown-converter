@@ -1,0 +1,4 @@
+app/constants/*
+server/uploads/*
+server/node_modules/*
+.DS_Store
